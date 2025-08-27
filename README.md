@@ -22,7 +22,7 @@ This is what I did, there may be better ways to do this.
 
 4. After initialising gcloud in the terminal, it should prompt you for authentication and asks you to create a project. Create one and name it properly, you will use it later.
 
-5. Go to the directory where you cloned this repo and run:
+5. Go to the directory where you cloned this repo (please only deploy main.py and requirements.txt) and run :
 
    ```
    gcloud functions deploy run_bot --gen2 --runtime=python311 --region=asia-southeast1 --source=. --entry-point=run_bot --trigger-http --set-env-vars=BOT_TOKEN=<YOUR_BOT_TOKEN>,GROUP_CHAT_ID=<YOUR_CHAT_ID>
