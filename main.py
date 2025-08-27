@@ -38,7 +38,7 @@ def run_bot(request):
         # For loop to generate mulitple links
         location = locations["senja"]
 
-        # Link
+        # Link for the 7pm and 8pm slots (1900hrs and 2000hrs)
         BOOKING_LINK = f"https://activesg.gov.sg/venues/{location}/activities/YLONatwvqJfikKOmB5N9U/timeslots?date={get_ballot_date()}&timeslots={get_epoch(19)}&timeslots={get_epoch(20)}"
 
         # Create message
